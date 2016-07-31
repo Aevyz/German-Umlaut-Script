@@ -14,8 +14,9 @@ This project aims to improve the quality of life of people who are using a QWERT
 It seeks to improve ck's original script from the [AHK forums](https://autohotkey.com/board/topic/515-german-umlaute-convenience-script/). Probably the most notable addition is adding `„`, which could not be found in the old script
 
 ##Requirements
-####Executable:     Windows
-####Script:         Autohotkey ([Download](https://autohotkey.com/download/))
+Executable:   Windows
+
+Script:     Autohotkey ([Download](https://autohotkey.com/download/))
 
 ##To-do list
 
