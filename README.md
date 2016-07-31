@@ -21,4 +21,5 @@ Script:     Autohotkey ([Download](https://autohotkey.com/download/))
 ##To-do list
 
 * Update Comments
+* Add a pause hotkey
 * Translate Readme into German
