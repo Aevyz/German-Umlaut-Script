@@ -1,18 +1,23 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                                                   ;;
-;; German Umlaute Convenience Script                 ;;
-;; for Superior US English Keyboard Layouts          ;;
+;; German Umlaut Script                              ;;
+;; Based off of Ck's original script                 ;;
 ;;                                                   ;;
-;; version 0.3 - 07/18/04                            ;;
-;; ck <use www.autohotkey.com forum to contact me>   ;;
+;; version: 160807                                   ;;
+;;                                                   ;;
+;; Contact: https://github.com/AetherV               ;;
 ;;                                                   ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; Original Thread:           https://autohotkey.com/board/topic/515-german-umlaute-convenience-script/
+;; Current Github Page:       https://github.com/AetherV/German-Umlaut-Script
+
+
 ;; Usage Instructions:
 ;; -------------------
-;; Load Script into AutoHotKey (only verified to work with 1.0.15 and Windows XP)
-;; a) Press any of the TRIGGERKEYS [u,U,a,A,o,O,s] in any application of your choice
-;; b) Within DELAY seconds, press the UMLAUTKEY to morph it into [ü,Ü,ä,Ä,ö,Ö,ß]
+;; Load Script into AutoHotKey
+;; a) Press any of the TRIGGERKEYS [u,U,a,A,o,O,s,"] in any application of your choice
+;; b) Within DELAY seconds, press the UMLAUTKEY to morph it into [Ã¼,Ãœ,Ã¤,Ã„,Ã¶,Ã–,ÃŸ,â€ž]
 
 ; after pressing a TRIGGERKEY, you have to wait DELAY seconds to press the UMLAUTKEY
 ; and make it appear normally (without triggering any Umlaut morphing)
@@ -35,42 +40,42 @@ $u::
 ; mirror self
 Send, u
 ; initialize current Umlaut
-UMLAUT = ü
+UMLAUT = Ã¼
 Goto, WaitForUK
 
 $+u::
 Send, U
-UMLAUT = Ü
+UMLAUT = Ãœ
 Goto, WaitForUK
 
 $o::
 Send, o
-UMLAUT = ö
+UMLAUT = Ã¶
 Goto, WaitForUK
 
 $+o::
 Send, O
-UMLAUT = Ö
+UMLAUT = Ã–
 Goto, WaitForUK
 
 $a::
 Send, a
-UMLAUT = ä
+UMLAUT = Ã¤
 Goto, WaitForUK
 
 $+a::
 Send, A
-UMLAUT = Ä
+UMLAUT = Ã„
 Goto, WaitForUK
 
 $"::
 Send, "
-UMLAUT = „
+UMLAUT = â€ž
 Goto, WaitForUK
 
 $s::
 Send, s
-UMLAUT = ß
+UMLAUT = ÃŸ
 
 
 
@@ -99,19 +104,19 @@ Loop
 	 	break
         } 
         else if UserInput = u
-		UMLAUT = ü
+		UMLAUT = Ã¼
 	else if UserInput = o
-		UMLAUT = ö
+		UMLAUT = Ã¶
 	else if UserInput = +o
-		UMLAUT = Ö
+		UMLAUT = Ã–
 	else if UserInput = a
-		UMLAUT = ä
+		UMLAUT = Ã¤
 	else if UserInput = A
-		UMLAUT = Ä
+		UMLAUT = Ã„
 	else if UserInput = s
-		UMLAUT = ß
+		UMLAUT = ÃŸ
 	else if UserInput = "
-		UMLAUT = „
+		UMLAUT = â€ž
 	else 
 		break
 }
