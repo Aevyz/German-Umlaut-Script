@@ -1,6 +1,6 @@
-Just use https://github.com/samhocevar/wincompose
 
 # [Archived] German Umlaut Script
+Just use https://github.com/samhocevar/wincompose
 
 ### What is this?
 This project aims to improve the quality of life of people who are using a QWERTY keyboard but require the features of a German QWERTZ keyboard, specifically:
